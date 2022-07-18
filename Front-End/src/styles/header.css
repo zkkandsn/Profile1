@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+.header {
+    backface-visibility: visible;
+  /* background-image: url("../../public/pictures/background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; */
+}
+.headerCanvas {
+  padding: 5px;
+}
+.headerMain{
+    padding: 3px;
+}
+.headerMain ul li{
+    list-style: none;
+}
+.headerMain ul li a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px 0;
+  display: inline-block;
+}
+.headerMain ul li a:hover {
+  color: #f9004d;
+}
+.headerIcons {
+  padding: 20px 0;
+  color: grey;
+  margin-right: 75px;
+}
+.headerIcons a {
+  width: 40px;
+  display: inline-block;
+  height: 40px;
+  line-height: 35px;
+  color: rgba(198, 201, 216, 0.75);
+  text-align: center;
+  font-size: 14px;
+}
+
+.headerIcons a:hover {
+  transform: translateY(-3px);
+  transition: 0.5s;
+  color: #fff;
+}
+.offcanvas{
+    background: #101010 !important;
+}
+.offCanvasMain li a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 0;
+    display: inline-block;
+}
+.offCanvasMain li{
+    list-style: none;
+}
+.offCanvasMain hr{
+    color: #f9004d;
+    width: 250px;
+    height: 50px;
+}
