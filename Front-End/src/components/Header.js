@@ -17,18 +17,49 @@ export default function Header() {
     return (
       <>
         <i
-          class="fa-solid navbarIcon ms-1 fa-lg fa-bars"
+          class="fa-solid navbarIcon ms-1 d-flex d-lg-none fa-lg fa-bars"
           variant="primary"
           onClick={handleShow}
         ></i>
         <Offcanvas show={show} onHide={handleClose} {...props}>
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body>
-            Some text as placeholder. In real life you can have the elements you
-            have chosen. Like, text, images, lists, etc.
-          </Offcanvas.Body>
+          <Offcanvas.Header closeButton></Offcanvas.Header>
+          <ul
+            closeButton
+            id="navbar"
+            className="d-flex flex-column col-lg-8 justify-content-around"
+          >
+            <li>
+              <a
+                id="btn1"
+                className={link == "home" ? "active" : ""}
+                href="#"
+                onClick={(e) => {
+                  setLink("home");
+                }}
+              >
+                Home
+              </a>
+              <hr />
+            </li>
+            <li>
+              <a id="btn1" href="#">
+                About
+              </a>
+              <hr />
+            </li>
+            <li>
+              <a id="btn1" href="#">
+                Service
+              </a>
+              <hr />
+            </li>
+            <li>
+              <a id="btn1" href="#">
+                Contact
+              </a>
+              <hr />
+            </li>
+          </ul>
         </Offcanvas>
       </>
     );

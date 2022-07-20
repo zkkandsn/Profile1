@@ -74,9 +74,34 @@
   border-radius: 1px;
   transition: 0.5s ease;
 }
+.actives {
+  color: #f9004d !important;
+  border-bottom: 5px solid #f9004d;
+  width: 100%;
+  border-radius: 1px;
+  transition: 0.5s ease;
+}
 .navbarIcon {
   width: 15px;
   height: 15px;
   margin-top: 17px;
   cursor: pointer;
+  color: #fff;
+}
+#btn1 {
+  text-decoration: none;
+  color: #fff;
+}
+#navbar li {
+  list-style: none;
+}
+.offcanvas {
+  background-color: black !important;
+}
+#navbar li hr {
+  transition: 0.5s;
+  color: red;
+  width: 250px;
+  height: 5px;
+  border-radius: 5px;
 }
