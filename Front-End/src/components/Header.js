@@ -2,6 +2,7 @@ import "../styles/header.css";
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import OffcanvasHeader from "react-bootstrap/esm/OffcanvasHeader";
 
 export default function Header() {
   const [link, setLink] = useState(["home", "about", "service", "contact"]);
@@ -22,42 +23,32 @@ export default function Header() {
           onClick={handleShow}
         ></i>
         <Offcanvas show={show} onHide={handleClose} {...props}>
-          <Offcanvas.Header closeButton></Offcanvas.Header>
+          <OffcanvasHeader closeButton>
+            <div></div>
+          </OffcanvasHeader>
           <ul
-            closeButton
-            id="navbar"
-            className="d-flex flex-column col-lg-8 justify-content-around"
+            id="navbarOffCanvas"
+            className="d-flex ms-4 flex-column col-10 justify-content-around"
           >
-            <li>
-              <a
-                id="btn1"
-                className={link == "home" ? "active" : ""}
-                href="#"
-                onClick={(e) => {
-                  setLink("home");
-                }}
-              >
+            <li className="activeOffCanvas mt-3">
+              <a id="btn1" href="#">
                 Home
               </a>
-              <hr />
             </li>
-            <li>
+            <li className="activeOffCanvas mt-3">
               <a id="btn1" href="#">
                 About
               </a>
-              <hr />
             </li>
-            <li>
+            <li className="activeOffCanvas mt-3">
               <a id="btn1" href="#">
                 Service
               </a>
-              <hr />
             </li>
-            <li>
+            <li className="activeOffCanvas mt-3">
               <a id="btn1" href="#">
                 Contact
               </a>
-              <hr />
             </li>
           </ul>
         </Offcanvas>
@@ -65,7 +56,7 @@ export default function Header() {
     );
   }
   return (
-    <div className="header h-100 col-lg-12 d-flex justify-content-around">
+    <div className="header container col-md-12 col-lg-12 d-flex justify-content-around">
       <div className="headerMain col-lg-6 d-none d-lg-flex">
         <ul id="navbar" className="d-flex col-lg-8 justify-content-around">
           <li>
