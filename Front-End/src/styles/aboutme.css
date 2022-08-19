@@ -1,3 +1,32 @@
 .aboutme {
   background: #191919;
 }
+.aboutMeImg img {
+  height: 450px;
+  border-radius: 15px;
+}
+#aboutmeText h2 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 900;
+}
+#aboutmeText p {
+  color: #717173;
+}
+#aboutTab {
+  cursor: pointer;
+}
+
+#aboutTab h3 {
+  width: 50%;
+  color: #fff;
+  border-bottom: 5px solid #fff;
+  font-size: 25px;
+  font-weight: 500;
+}
+.aboutMeActiver {
+  width: 100% !important;
+  color: #f9004d !important;
+  border-bottom: 5px solid #f9004d !important;
+  transition: 0.5s ease !important;
+}

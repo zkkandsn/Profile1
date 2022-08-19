@@ -1,25 +1,83 @@
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .mainHeader {
-    background-image: url("../../public/pictures/background.jpg");
+    background-image: url("../../public/pictures/background1.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     height: 50vh;
   }
 }
-@media (min-width: 1440px) {
-  .mainHeader {
-    background-image: url("../../public/pictures/background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 75vh;
+@media (min-width: 768px) {
+  #welcomeToMyWorld h3 {
+    color: rgba(198, 201, 216, 0.75);
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 0px;
+  }
+  #hiIm h2 {
+    font-weight: 900;
+    text-transform: inherit;
+    width: 70%;
+    color: #fff;
+    font-size: 40px;
+    line-height: 30px;
+  }
+  .transitionText {
+    font-size: 50px;
+    letter-spacing: 4px;
+    color: #f9004d;
+    opacity: 0;
+    position: absolute;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 70%;
+  }
+  .hiIm h2 {
+    margin-top: 60px;
   }
 }
-@media (min-width: 499px) {
+@media (min-width: 1000px) {
   .mainHeader {
-    background-image: url("../../public/pictures/background.jpg");
+    background-image: url("../../public/pictures/background1.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 75vh;
+    height: 65vh;
+  }
+  #welcomeToMyWorld h3 {
+    color: rgba(198, 201, 216, 0.75);
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 0px;
+  }
+  #hiIm h2 {
+    font-weight: 900;
+    text-transform: inherit;
+    width: 70%;
+    color: #fff;
+    font-size: 50px;
+    line-height: 30px;
+  }
+  .transitionText {
+    font-size: 70px;
+    letter-spacing: 4px;
+    color: #f9004d;
+    opacity: 0;
+    position: absolute;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 70%;
+  }
+  .hiIm h2 {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .mainHeader {
+    background-image: url("../../public/pictures/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 30vh;
   }
   #welcomeToMyWorld h3 {
     color: rgba(198, 201, 216, 0.75);
@@ -33,22 +91,51 @@
     text-transform: inherit;
     width: 70%;
     color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .transitionText {
     font-size: 30px;
-    line-height: 50px;
+    letter-spacing: 4px;
+    color: #f9004d;
+    opacity: 0;
+    position: absolute;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 70%;
+  }
+  .hiIm h2 {
+    margin-top: 50px;
   }
 }
-#welcomeToMyWorld h3 {
-  color: rgba(198, 201, 216, 0.75);
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  margin-bottom: 0px;
+
+.t1 {
+  animation: ani1 5s infinite;
 }
-#hiIm h2 {
-  font-weight: 900;
-  text-transform: inherit;
-  width: 70%;
-  color: #fff;
-  font-size: 30px;
-  line-height: 30px;
+.t2 {
+  animation: ani2 5s infinite;
+}
+@keyframes ani1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+@keyframes ani2 {
+  75% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
